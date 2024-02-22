@@ -102,6 +102,9 @@ app.post("/api/sendContact/sendInstallation", async (req, res) => {
 app.get("/", (req, res) => {
   res.send("server on");
 });
+app.get("/check", (req, res) => {
+  res.send("server route checking");
+});
 
 // Start server
 app.listen(port, () => {
