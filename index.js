@@ -18,14 +18,14 @@ app.post("/api/sendContact", async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: "Gmail",
       auth: {
-        user: process.env.EMAILFROM,
-        pass: process.env.PASSWORDMAIL,
+        user: "laboiteautomatique01@gmail.com",
+        pass: "pzrx bwiw metb jrtn",
       },
     });
 
     // Email content
     const mailOptions = {
-      from: process.env.EMAIL_FROM,
+      from: `${email}`,
       to: "contact@laboiteautomatique.com",
       subject: "New Contact Form Submission",
       text: `
@@ -66,8 +66,8 @@ app.post("/api/sendContact/sendInstallation", async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: "Gmail",
       auth: {
-        user: process.env.EMAILFROM,
-        pass: process.env.PASSWORDMAIL,
+        user: "laboiteautomatique01@gmail.com",
+        pass: "pzrx bwiw metb jrtn",
       },
     });
 
