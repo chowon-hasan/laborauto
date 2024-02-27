@@ -28,7 +28,7 @@ app.post("/contactForm", async (req, res) => {
 
     // Email content
     const mailOptions = {
-      from: email ? email : "mail@laboiteautomatique.com",
+      from: email,
       to: "contact@laboiteautomatique.com",
       subject: "New Contact Form Submission",
       text: `
