@@ -26,7 +26,7 @@ app.post("/api/sendContact", async (req, res) => {
 
     // Email content
     const mailOptions = {
-      from: `${email}`,
+      from: email ? email : "mail@laboiteautomatique.com",
       to: "contact@laboiteautomatique.com",
       subject: "New Contact Form Submission",
       text: `
@@ -75,7 +75,7 @@ app.post("/api/sendContact/sendInstallation", async (req, res) => {
 
     // Email content
     const mailOptions = {
-      from: process.env.EMAILFROM,
+      from: email ? email : "mail@laboiteautomatique.com",
       to: "contact@laboiteautomatique.com",
       subject: "New Installation Form Submission",
       text: `
