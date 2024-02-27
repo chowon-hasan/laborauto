@@ -18,6 +18,8 @@ app.post("/api/sendContact", async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: "Gmail",
       host: "mail.laboiteautomatique.com",
+      post: 465,
+      secure: true,
       auth: {
         user: "contact@laboiteautomatique.com",
         pass: "Brice007//",
@@ -67,6 +69,8 @@ app.post("/api/sendContact/sendInstallation", async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: "Gmail",
       host: "mail.laboiteautomatique.com",
+      post: 465,
+      secure: true,
       auth: {
         user: "contact@laboiteautomatique.com",
         pass: "Brice007//",
