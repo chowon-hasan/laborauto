@@ -20,10 +20,10 @@ app.post("/contactForm", async (req, res) => {
       // host: "mail.laboiteautomatique.com",
       port: 465,
       secure: true,
-      auth: {
-        user: "laboiteautomatique01@gmail.com",
-        pass: " pzrx bwiw metb jrtn",
-      },
+      // auth: {
+      //   user: "laboiteautomatique01@gmail.com",
+      //   pass: " pzrx bwiw metb jrtn",
+      // },
     });
 
     // Email content
