@@ -18,7 +18,7 @@ app.post("/contactForm", async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: "Gmail",
       host: "mail.laboiteautomatique.com",
-      post: 465,
+      port: 465,
       secure: true,
       auth: {
         user: "contact@laboiteautomatique.com",
@@ -69,7 +69,7 @@ app.post("/installForm", async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: "Gmail",
       host: "mail.laboiteautomatique.com",
-      post: 465,
+      port: 465,
       secure: true,
       auth: {
         user: "contact@laboiteautomatique.com",
@@ -103,13 +103,6 @@ app.post("/installForm", async (req, res) => {
     console.error("Error sending email:", error);
     res.status(500).json({ error: "Failed to send email" });
   }
-});
-
-app.get("/", (req, res) => {
-  res.send("server on");
-});
-app.get("/check", (req, res) => {
-  res.send("server route checking");
 });
 
 // Start server
