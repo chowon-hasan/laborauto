@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // Contact form API endpoint
-app.post("/api/sendContact", async (req, res) => {
+app.post("/contactForm", async (req, res) => {
   try {
     const { email, phone, name, message, category } = req.body;
 
@@ -51,7 +51,7 @@ app.post("/api/sendContact", async (req, res) => {
 });
 
 // Installation form API endpoint
-app.post("/api/sendContact/sendInstallation", async (req, res) => {
+app.post("/installForm", async (req, res) => {
   try {
     const {
       vehicle,
