@@ -17,7 +17,7 @@ app.post("/contactForm", async (req, res) => {
     // Create Nodemailer transporter
     const transporter = nodemailer.createTransport({
       service: "Gmail",
-      host: "mail.laboiteautomatique.com",
+      // host: "mail.laboiteautomatique.com",
       port: 465,
       secure: true,
       auth: {
@@ -68,7 +68,7 @@ app.post("/installForm", async (req, res) => {
     // Create Nodemailer transporter
     const transporter = nodemailer.createTransport({
       service: "Gmail",
-      host: "mail.laboiteautomatique.com",
+      // host: "mail.laboiteautomatique.com",
       port: 465,
       secure: true,
       auth: {
