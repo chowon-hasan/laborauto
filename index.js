@@ -105,6 +105,10 @@ app.post("/installForm", async (req, res) => {
   }
 });
 
+app.get("/", async (req, res) => {
+  res.send("server is running");
+});
+
 // Start server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
