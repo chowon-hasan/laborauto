@@ -17,9 +17,10 @@ app.post("/api/sendContact", async (req, res) => {
     // Create Nodemailer transporter
     const transporter = nodemailer.createTransport({
       service: "Gmail",
+      host: "mail.laboiteautomatique.com",
       auth: {
-        user: "laboiteautomatique01@gmail.com",
-        pass: "pzrx bwiw metb jrtn",
+        user: "contact@laboiteautomatique.com",
+        pass: "Brice007//",
       },
     });
 
@@ -65,15 +66,16 @@ app.post("/api/sendContact/sendInstallation", async (req, res) => {
     // Create Nodemailer transporter
     const transporter = nodemailer.createTransport({
       service: "Gmail",
+      host: "mail.laboiteautomatique.com",
       auth: {
-        user: "laboiteautomatique01@gmail.com",
-        pass: "pzrx bwiw metb jrtn",
+        user: "contact@laboiteautomatique.com",
+        pass: "Brice007//",
       },
     });
 
     // Email content
     const mailOptions = {
-      from: process.env.EMAIL_FROM,
+      from: process.env.EMAILFROM,
       to: "contact@laboiteautomatique.com",
       subject: "New Installation Form Submission",
       text: `
