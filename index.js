@@ -109,6 +109,10 @@ app.get("/", async (req, res) => {
   res.send("server is running");
 });
 
+app.get("/check", (req, res) => {
+  res.send("server route checking");
+});
+
 // Start server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
