@@ -21,8 +21,8 @@ app.post("/contactForm", async (req, res) => {
       port: 465,
       secure: true,
       auth: {
-        user: "contact@laboiteautomatique.com",
-        pass: "Brice007//",
+        user: "laboiteautomatique01@gmail.com",
+        pass: " pzrx bwiw metb jrtn",
       },
     });
 
